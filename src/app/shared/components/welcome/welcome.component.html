@@ -1,0 +1,7 @@
+<div class="welcom">
+  <div class="logged-user">Hello, {{authService.name ? authService.name : 'visitor' }}</div>
+  <div *ngIf='authService.authenticated' class="wishlist">
+    <span>You have {{wishListCounter}} items in your</span>
+    <a routerLink="/wishlist">wishlist</a>
+  </div>
+</div>

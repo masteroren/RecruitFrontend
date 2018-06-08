@@ -1,0 +1,24 @@
+<div class="login">
+  <app-welcome></app-welcome>
+  <div class="form-container" [formGroup]="loginForm">
+    <label class="form-row">
+      <div class="form-title">Name</div>
+      <input #name class="form-input validate" formControlName="name" placeholder="Full Name">
+      <div *ngIf="loginForm.controls['name'].dirty && loginForm.controls['name'].invalid" class="validation-error">Please enter your name.</div>
+    </label>
+    <label class="form-row">
+      <div class="form-title">Email</div>
+      <input class="form-input validate" formControlName="email" placeholder="Email">
+      <div *ngIf="loginForm.controls['email'].dirty && loginForm.controls['email'].invalid" class="validation-error">Please enter your email.</div>
+    </label>
+    <label class="form-row">
+      <div class="form-title">Password</div>
+      <input class="form-input validate" formControlName="password" placeholder="Password">
+      <div *ngIf="loginForm.controls['password'].dirty && loginForm.controls['password'].invalid" class="validation-error">Please enter your email.</div>
+    </label>
+    <div class="form-forgot-pass cursor-pointer">
+      Forgot Password?
+    </div>
+    <button [disabled]="!loginForm.valid" class="primary-btn cursor-pointer" [ngClass]="{disabled: loginForm.invalid}" (click)="login(name.value)">Login</button>
+  </div>
+</div>

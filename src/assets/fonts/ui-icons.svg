@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?> 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="ui-icons" horiz-adv-x="24">
+    <font-face font-family="ui-icons"
+      units-per-em="24" ascent="24"
+      descent="0"
+      font-style="normal !important" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="heart-header"
+      unicode="&#xEA02;"
+      horiz-adv-x="28.799999999999997" d="" />
+    <glyph glyph-name="user"
+      unicode="&#xEA01;"
+      horiz-adv-x="18" d=" M15.64 0C15.13 4.347 13.32 8 8.81 8S2.49 4.347 1.98 0H-0.01C0.64 5.425 3.2 10 8.81 10S16.98 5.425 17.63 0H15.64zM8.81 12A6 6 0 1 0 8.81 24A6 6 0 0 0 8.81 12zM8.81 22A4 4 0 1 1 8.81 14A4 4 0 0 1 8.81 22z" />
+  </font>
+</defs>
+</svg>

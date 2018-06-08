@@ -1,0 +1,9 @@
+<div class="home">
+  <app-welcome></app-welcome>
+  <div class="search">
+    <app-search (onSearch)="search($event)"></app-search>
+    <app-filter></app-filter>
+  </div>
+
+  <app-books [books]="books"></app-books>
+</div>

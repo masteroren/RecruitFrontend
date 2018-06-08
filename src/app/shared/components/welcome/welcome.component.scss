@@ -1,0 +1,33 @@
+:host {
+    margin-top: 19px;
+    margin-bottom: 48px;
+}
+
+.welcom {
+    .logged-user {
+        font-size: 36px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2a2c2e;
+    }
+
+    .wishlist {
+        font-family: AvenirNextLTPro;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2a2c2e;
+
+        a {
+            color: #448aff;
+        }
+    }
+}

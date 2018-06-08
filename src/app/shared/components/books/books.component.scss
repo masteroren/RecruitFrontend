@@ -1,0 +1,21 @@
+.books {
+    margin-top: 30px;
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        justify-content: flex-start;
+        li {
+            height: 342px;
+            width: 231px;
+            border-radius: 4.3px;
+            box-shadow: 0 3px 7px 0 rgba(172, 181, 185, 0.4);
+            background-color: #ffffff;
+            border: solid 0.5px rgba(207, 216, 220, 0.2);
+            list-style: none;
+            margin-bottom: 30px;
+            margin-right: 14px;
+        }
+    }
+}

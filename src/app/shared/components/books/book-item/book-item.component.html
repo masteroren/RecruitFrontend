@@ -1,0 +1,44 @@
+<div *ngIf="book.volumeInfo" class="book">
+  <div class="image-container">
+    <img [src]="book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.thumbnail">
+  </div>
+  <div class="content-container">
+    <div class="title-container">
+      <div class="title">{{ book.volumeInfo.title }}</div>
+      <div class="author">
+        {{ book.volumeInfo.authors && book.volumeInfo.authors[0] }}
+      </div>
+    </div>
+    <div class="more-info-container">
+      <div *ngIf="viewConfig.applyMoreInfo" class="cursor-pointer" (click)="display = true">More info</div>
+      <i *ngIf="viewConfig.applyHeartIcon" class="icon-heart-o-anticon icon" [ngClass]="{disabled: inWishList}" (click)="addToWishList()"></i>
+      <div *ngIf="viewConfig.applyRemove" class="cursor-pointer" (click)="removeFromWishlist()">Remove from wishlist</div>
+    </div>
+  </div>
+</div>
+
+<div class="dialog">
+  <p-dialog [(visible)]="display" [modal]="true" [resizable]="false" [draggable]="false" [dismissableMask]="true">
+    <div class="content-container">
+      <div class="header">
+        <div class="title">{{ book.volumeInfo.title }}</div>
+        <div class="author">
+          {{ book.volumeInfo.authors && book.volumeInfo.authors[0] }}
+        </div>
+      </div>
+      <div class="content">
+        <img [src]="book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.thumbnail">
+        <div class="description">{{ book.volumeInfo.description }}</div>
+      </div>
+      <div class="footer">
+        <button class="btn primary-btn cursor-pointer" [ngClass]="{disabled: inWishList}" [disabled]="inWishList" (click)="addToWishList()">
+          <i class="icon-heart"></i>
+          <span class="add-to-wishlist">Add to Wishlist</span>
+        </button>
+        <button class="btn secondary-btn cursor-pointer" (click)="display = false">
+          <span>Close</span>
+        </button>
+      </div>
+    </div>
+  </p-dialog>
+</div>

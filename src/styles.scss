@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "styles/overrides/dialog";
+@import "styles/ui-icons";
+@import "styles/ui-sprite";
+@include sprites($spritesheet-sprites);
+[class*="ui-icons"] {
+    @extend %ui-icons;
+}
+
+[class*="ui-icons-"] {
+    display: inline-block;
+    font-family: ui-icons;
+    font-style: normal;
+    i:before {
+        font-family: ui-icons !important;
+        font-style: normal;
+        font-weight: normal !important;
+        vertical-align: top;
+    }
+}
+
+[class*="icon-"] {
+    display: inline-block;
+}
+
+html,
+body {
+    width: 1024px;
+    margin: 0 auto !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    direction: ltr;
+    padding: 0;
+    margin: 0;
+    outline: none !important;
+}
+
+.validation-error {
+    width: 388px;
+    height: 15px;
+    font-family: AvenirNextLTPro;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f5363c;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.primary-btn {
+    height: 40px;
+    border-radius: 4px;
+    background-image: linear-gradient(97deg, #79beff, #448aff);
+    margin-top: 30px;
+    border: none;
+    color: #ffffff;
+    &.disabled {
+        opacity: 0.3;
+        cursor:default;
+    }
+}
+
+.secondary-btn {
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #272727;
+    color: #272727;
+    background-color: transparent;
+}

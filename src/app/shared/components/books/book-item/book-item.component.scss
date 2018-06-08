@@ -1,0 +1,124 @@
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    .image-container {
+        height: 216px;
+        border-radius: 3px;
+        background-color: #f0f0f0;
+        position: relative;
+        img {
+            margin: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            max-height: 200px;
+        }
+    }
+    .content-container {
+        margin: 10px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title-container {
+            .title {
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #2a2c2e;
+            }
+            .author {
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #78909c;
+            }
+        }
+        .more-info-container {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #448aff;
+            .icon {
+                width: 18px;
+                height: 14px;
+                &.disabled {
+                    opacity: 0.3;
+                    cursor: default;
+                }
+            }
+        }
+    }
+}
+
+.truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dialog {
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 23px;
+            max-height: 330px;
+            overflow-y: auto;
+            img {
+                max-width: 170px;
+                max-height: 175px;
+            }
+            .description {
+                margin-left: 12px;
+            }
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            .add-to-wishlist {
+                margin-left: 7px;
+            }
+        }
+    }
+    .btn {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        &.secondary-btn {
+            margin-top: 10px;
+        }
+        &.disabled {
+            opacity: 0.3;
+            cursor: default;
+        }
+    }
+}

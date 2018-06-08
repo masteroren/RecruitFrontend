@@ -1,0 +1,61 @@
+.login {
+    width: 388px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        .form-row {
+            height: 95px;
+            .form-title {
+                width: 73px;
+                height: 19px;
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #383838;
+            }
+            .form-input {
+                width: 278px;
+                border-radius: 3px;
+                background-color: #ffffff;
+                border: solid 1px #e8e8e8;
+                padding: 13px 16px 10px 16px;
+                outline: none;
+                color: #78909c;
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                &.validate.ng-dirty.ng-invalid {
+                    border: 1px solid red;
+                }
+                &.red-border {
+                    border-color: red;
+                }
+            }
+        }
+    }
+    .form-forgot-pass {
+        height: 16px;
+        font-size: 13px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #448aff;
+    }
+    .primary-btn {
+        width: 388px;
+    }
+}

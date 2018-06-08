@@ -1,0 +1,28 @@
+.search-container {
+    background-color: #f8f8f8;
+    width: 482px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .search {
+        width: 85%;
+        border-radius: 3px;
+        background-color: transparent;
+        border: none;
+        padding: 14px 16px;
+        outline: none;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2a2c2e;
+    }
+    .icon16 {
+        width: 16px;
+        height: 16px;
+        margin-right: 16px;
+    }
+}

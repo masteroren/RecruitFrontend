@@ -1,0 +1,24 @@
+.top-bar {
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #e8e8e8; 
+
+    .icon {
+        cursor: pointer;
+        &.user {
+            width: 18px;
+            height: 24px;
+            opacity: 0.5;
+          }
+    
+         &.heart_header {
+            width: 24px;
+            height: 20px;
+            margin-right: 19px;
+          }
+    }
+
+   
+}
