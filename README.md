@@ -20,4 +20,10 @@ Run `npm start` and go to `http:/localhost:4200`
 
 ## Comments
 
+Few tasks are not implement becuase the are not in the requirments.
+
 1. Filter is not described in the task so I left a placeholder for it.
+2. The look of the wishlist is different from the requirments becuase a lack of time but if it is mandatiry I can easly do it.
+3. Forgot password is not implemented.
+4. The actions in the top bar are not implemented.
+5. I used primeng as my third party.
