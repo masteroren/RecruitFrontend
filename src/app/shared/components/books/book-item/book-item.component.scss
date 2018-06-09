@@ -34,6 +34,10 @@
                 letter-spacing: normal;
                 text-align: left;
                 color: #2a2c2e;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 75ch;
             }
             .author {
                 font-size: 16px;
@@ -44,6 +48,10 @@
                 letter-spacing: normal;
                 text-align: left;
                 color: #78909c;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 75ch;
             }
         }
         .more-info-container {

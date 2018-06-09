@@ -4,8 +4,8 @@
   </div>
   <div class="content-container">
     <div class="title-container">
-      <div class="title">{{ book.volumeInfo.title }}</div>
-      <div class="author">
+      <div class="title" [title]="book.volumeInfo.title">{{ book.volumeInfo.title }}</div>
+      <div class="author" [title]="book.volumeInfo.authors && book.volumeInfo.authors[0]">
         {{ book.volumeInfo.authors && book.volumeInfo.authors[0] }}
       </div>
     </div>
