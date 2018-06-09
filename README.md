@@ -27,3 +27,4 @@ Few tasks are not implement becuase the are not in the requirments.
 3. Forgot password is not implemented.
 4. The actions in the top bar are not implemented.
 5. I used primeng as my third party.
+6. Also I didn't use any mock server like json-server to keep the wishlist so it will reset on refresh or re-enter the application. It was not clear on the task definitions but if it is neccessery I can easly do it.
